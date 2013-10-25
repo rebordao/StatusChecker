@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+declare -A HOSTS
+
+# machines' IPs to monitor, and the people in charge of each one. Example:
+# HOSTS["192.168.11.3"]="person1@gmail.com person2$gmail.com"
+
+HOSTS["<IP of machine 1 here>"]="<write email addresses>"
+HOSTS["<IP of machine 2 here>"]="<write email addresses>"
+HOSTS["<IP of machine 3 here>"]="<write email addresses>"
+HOSTS["<IP of machine 4 here>"]="<write email addresses>"
+
+# email settings
+SMTPSERVER="<SMTP's server here, for example gmail is smtp.gmail.com:587>"
+USERNAME="<SMTP's username here>"
+PASSWORD="<username's password here>"
+SENDERNAME="<name of the sender here>"
+SENDEREMAIL="<username's email address of sender here>"
